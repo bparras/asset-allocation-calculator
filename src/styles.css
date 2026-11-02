@@ -1,0 +1,98 @@
+:root {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  font-size: 16px;
+  color: #0a0b0d;
+  background: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f8fa;
+  padding: 24px;
+}
+
+.button {
+  border-radius: 8px;
+  border: 1px solid #dedfe2;
+  background-color: #fdfdfd;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fcf9f9;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  input {
+    flex: 1;
+    padding: 12px;
+    overflow: hidden;
+    border: 1px solid #dedfe2;
+    border-radius: 8px;
+  }
+
+  select {
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+    border: 1px solid #dedfe2;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 75px;
+  }
+
+  .amount-row {
+    display: flex;
+    gap: 12px;
+
+    input {
+      min-width: 0;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 12px;
+  }
+}
